@@ -21,20 +21,23 @@ It pulls the latest GitHub IPs from their public API and merges them into your e
 
 1. Clone the repo or copy the script files.
 2. Install dependencies:
-
+```bash
     pip install -r requirements.txt
+```
 
 3. Create a `.env` file:
-
+```md
     HETZNER_USERNAME=your-robot-username
     HETZNER_PASSWORD=your-robot-password
     SERVER_IDS=123456,654321
+```
 
 ## Usage
 
 To run the script once:
-
+```bash
     python main.py
+```
 
 To run it continuously (e.g. in Docker or a background process), the script includes a loop that checks every hour by default.
 
